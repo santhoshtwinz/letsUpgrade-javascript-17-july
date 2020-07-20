@@ -1,0 +1,62 @@
+<html>
+<head> 
+    <title>Calculator</title>
+</head>
+<body>
+    <button onclick="add()">For Addition click Here</button>
+    <hr>
+    <button onclick="sub()">For Subtraction click Here</button>
+    <hr>
+    <button onclick="mul()">For Multiplication click Here</button>
+    <hr>
+    <button onclick="div()">For Division click Here</button>
+    <hr>
+    <button onclick="sqrt()">For SquareRoot click Here</button>
+    <hr>
+    <button onclick="per()">For Percentage click Here</button>
+
+    <script>
+     function add()
+     {
+        var sum1 = Number(window.prompt("Enter number 1"));
+        var sum2 = Number(window.prompt("Enter number 2"));
+        var Result = (sum1) + (sum2);
+        document.write(Result);
+     }
+     function sub()
+     {
+        var sum1 = Number(window.prompt("Enter number 1"));
+        var sum2 = Number(window.prompt("Enter number 2"));
+        var Result = (sum1) - (sum2);
+        document.write(Result);
+     }
+     function mul()
+     {
+        var sum1 = Number(window.prompt("Enter number 1"));
+        var sum2 = Number(window.prompt("Enter number 2"));
+        var Result = (sum1) * (sum2);
+        document.write(Result);
+     }
+     function div()
+     {
+        var sum1 = Number(window.prompt("Enter number 1"));
+        var sum2 = Number(window.prompt("Enter number 2"));
+        var Result = (sum1) / (sum2);
+        document.write(Result);
+     }
+     function sqrt()
+     {
+        var sum1 = Number(window.prompt("Enter the number"));
+        var Result = Math.sqrt(sum1);
+        document.write(Result);
+     }
+     function per()
+     {
+        var sum1 = Number(window.prompt("Enter number 1"));
+        var sum2 = Number(window.prompt("Enter number 2"));
+        var Result = ((sum1 / sum2) *100);
+        document.write(Result);
+     }
+       </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sales</title>
+</head>
+<body>
+    <Script>
+        let sales = window.prompt("Enter the Sales made by you");
+        console.log(sales);
+        
+        let Salary=10000;
+
+        if (sales<=5000)
+        {
+            document.write("Your Base Salary is ₹" + Salary +"<br>")
+            document.write("Your Commission Percent is 2% of your Salary, and your Commission is ₹"+Math.floor(Salary*(2/100)));
+        }  
+
+        else if (sales>5000 && sales <=10000)
+        {
+            document.write("Your Base Salary is ₹" + Salary +"<br>")
+            document.write("Your Commission Percent is 5% of your Salary, and your Commission is ₹"+Math.floor(Salary*(5/100)));    
+            } 
+
+        else if (sales>10000 && sales <=20000)
+        {
+            document.write("Your Base Salary is ₹" + Salary +"<br>")
+            document.write("Your Commission Percent is 7% of your Salary, and your Commission is ₹"+Math.floor(Salary*(7/100)));        
+        } 
+
+        else
+        {
+            document.write("Your Base Salary is ₹" + Salary +"<br>")
+            document.write("Your Commission Percent is 10% of your Salary, and your Commission is ₹"+Math.floor(Salary*(10/100)));     
+           } 
+           </Script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+      let ask = (question ,yes ,no) => {
+            if(confirm(question)) yes()
+      else no();
+      }
+debugger;
+      ask("Do you agree?",
+      () => {
+          alert("You agreed");
+      },
+      () => {
+          alert("You cancelled the Execution");
+      }
+      )
+  
+    </script>
+</body>
+</html> 
