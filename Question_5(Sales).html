@@ -8,30 +8,26 @@
         let sales = window.prompt("Enter the Sales made by you");
         console.log(sales);
         
-        let Salary=10000;
+       // let basesales=sales;
 
         if (sales<=5000)
         {
-            document.write("Your Base Salary is ₹" + Salary +"<br>")
-            document.write("Your Commission Percent is 2% of your Salary, and your Commission is ₹"+Math.floor(Salary*(2/100)));
+            document.write("The Total Commission earned by you is ₹"+Math.floor(sales*(2/100)));
         }  
 
         else if (sales>5000 && sales <=10000)
         {
-            document.write("Your Base Salary is ₹" + Salary +"<br>")
-            document.write("Your Commission Percent is 5% of your Salary, and your Commission is ₹"+Math.floor(Salary*(5/100)));    
+          document.write("The Total Commission earned by you is ₹"+Math.floor((5000*(2/100))+((sales-5000)*(5/100))));   
             } 
 
         else if (sales>10000 && sales <=20000)
         {
-            document.write("Your Base Salary is ₹" + Salary +"<br>")
-            document.write("Your Commission Percent is 7% of your Salary, and your Commission is ₹"+Math.floor(Salary*(7/100)));        
+         document.write("The Total Commission earned by you is ₹"+Math.floor((5000*(2/100))+(5000*(5/100))+((sales-10000)*(7/100))));        
         } 
 
         else
         {
-            document.write("Your Base Salary is ₹" + Salary +"<br>")
-            document.write("Your Commission Percent is 10% of your Salary, and your Commission is ₹"+Math.floor(Salary*(10/100)));     
+           document.write("The Total Commission earned by you is ₹"+Math.floor((5000*(2/100))+(5000*(5/100))+(10000*(7/100))+((sales-20000)*(10/100))));    
            } 
            </Script>
 </body>
